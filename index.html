@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Level</title>
+        <link rel="stylesheet" href="./assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" href="./assets/scss/index.css">
+    </head>
+    <body>
+        <main class="page">
+            <header class="header">
+                <nav class="navbar navbar-expand-md navbar-light bg-light d-flex justify-content-center align-items-center">
+                    <div class="container d-flex justify-content-between align-items-center">
+                        <a class="navbar-brand d-flex align-items-center" title="level website">
+                            <img src="./assets/images/logo.png" alt="Site Logo">
+                            <h1 class="logo-text">Level</h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ms-auto position-relative">
+                                <a class="level-nav-link nav-link p-5 active" href="#search">Search</a>
+                                <a class="level-nav-link nav-link p-5" href="#services">Services</a>
+                                <a class="level-nav-link nav-link p-5" href="#recommends">Recommends</a>
+                                <a class="level-nav-link nav-link p-5 me-4" href="#contact">Contact</a>
+                                <span class="position-absolute">
+                                    <i class="fas fa-sun level-nav-icon" title="Default Mood"></i>
+                                    <i class="fas fa-moon level-nav-icon hide" title="Dark Mood"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="search-form bg-white py-5 d-flex justify-content-center align-items-center" id="search">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="box bg-white pt-4 pb-2 px-5 rounded-1">
+                        <form class="d-flex justify-content-center align-items-center gap-3 flex-wrap" action="index.html">
+                            <div class="form-group position-relative">
+                                <i class="fas fa-map-marker position-absolute"></i>
+                                <input type="text" name="city" class="form-control rounded-0 py-3 pe-3 ps-5" placeholder="type your destination">
+                            </div>
+                            <div class="form-group position-relative">
+                                <i class="fas fa-calendar position-absolute"></i>
+                                <input type="text" class="form-control rounded-0 py-3 pe-3 ps-5" id="inputCheckIn" placeholder="check in">
+                            </div>
+                            <div class="form-group position-relative">
+                                <i class="fas fa-calendar position-absolute"></i>
+                                <input type="text" class="form-control rounded-0 py-3 pe-3 ps-5" id="inputCheckOut" placeholder="check out">
+                            </div>
+                            <div class="form-group position-relative">
+                                <i class="fas fa-bed position-absolute"></i>
+                                <select class="form-control rounded-0 py-3 pe-3 ps-5">
+                                    <option value="">Rooms</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="form-group position-relative">
+                                <i class="fas fa-user position-absolute"></i>
+                                <select class="form-control rounded-0 py-3 pe-3 ps-5">
+                                    <option value="">Adults</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="form-group position-relative">
+                                <i class="fas fa-user position-absolute"></i>
+                                <select class="form-control rounded-0 py-3 pe-3 ps-5">
+                                    <option value="">Children</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="form-group position-relative">
+                                <input type="submit" value="check" class="form-control rounded-0 py-3 px-3 text-white text-uppercase">
+                            </div>
+                        </form>
+                        <div class="text mt-4">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, nihil. <a class="text-capitalize text-dark" href="#">need help?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services bg-white pb-5" id="services">
+                <div class="title py-5 text-center text-white">
+                    <h1>we are here to help you?</h1>
+                    <p class="my-2">subscribe to get our newsletters</p>
+                    <div class="btn mt-1 py-3 px-4 text-white">subscribe newsletters</div>
+                </div>
+                <div class="cards d-flex justify-content-center align-items-center mt-4">
+                    <div class="container d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="box text-center p-4">
+                            <i class="fas fa-terminal mb-3"></i>
+                            <h3>Level HTML Template by Tooplate website</h3>
+                            <p class="my-3">You are allowed to download, edit and use this template for your business or client websites</p>
+                            <div class="btn rounded-0 py-3 px-3 text-white text-uppercase">
+                                continue reading
+                            </div>
+                        </div>
+                        <div class="box text-center p-4">
+                            <i class="fas fa-plane mb-3"></i>
+                            <h3>Original Website Template Producer</h3>
+                            <p class="my-3">You are NOT allowed to re-distribute the downloadable template ZIP file on any website.</p>
+                            <div class="btn rounded-0 py-3 px-3 text-white text-uppercase">
+                                continue reading
+                            </div>
+                        </div>
+                        <div class="box text-center p-4">
+                            <i class="fab fa-meetup mb-3"></i>
+                            <h3>Contact us if you have any question</h3>
+                            <p class="my-3">If you see this template being distributed on any other site, that is an illegal copy.</p>
+                            <div class="btn rounded-0 py-3 px-3 text-white text-uppercase">
+                                continue reading
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recommends d-flex justify-content-center align-items-center py-5" id="recommends">
+                <div class="container">
+                    <div class="row d-flex justify-content-center gap-4">
+                        <div class="slider col-12 col-xl-7">
+                            <div class="article">
+                                <div class="img">
+                                    <img src="./assets/images/img-01.jpg" alt="article">
+                                </div>
+                                <div class="content px-3 py-4 bg-white">
+                                    <h3 class="mb-2">nunc in felis aliquent metus luctus iaculis</h3>
+                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                    <a href="#" class="btn rounded-0 py-3 px-3 text-white text-uppercase mt-3">more details</a>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="img">
+                                    <img src="./assets/images/img-02.jpg" alt="article">
+                                </div>
+                                <div class="content px-3 py-4 bg-white">
+                                    <h3 class="mb-2">nunc in felis aliquent metus luctus iaculis</h3>
+                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                    <a href="#" class="btn rounded-0 py-3 px-3 text-white text-uppercase mt-3">more details</a>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="img">
+                                    <img src="./assets/images/img-01.jpg" alt="article">
+                                </div>
+                                <div class="content px-3 py-4 bg-white">
+                                    <h3 class="mb-2">nunc in felis aliquent metus luctus iaculis</h3>
+                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                    <a href="#" class="btn rounded-0 py-3 px-3 text-white text-uppercase mt-3">more details</a>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="img">
+                                    <img src="./assets/images/img-02.jpg" alt="article">
+                                </div>
+                                <div class="content px-3 py-4 bg-white">
+                                    <h3 class="mb-2">nunc in felis aliquent metus luctus iaculis</h3>
+                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                    <a href="#" class="btn rounded-0 py-3 px-3 text-white text-uppercase mt-3">more details</a>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="img">
+                                    <img src="./assets/images/img-01.jpg" alt="article">
+                                </div>
+                                <div class="content px-3 py-4 bg-white">
+                                    <h3 class="mb-2">nunc in felis aliquent metus luctus iaculis</h3>
+                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                    <a href="#" class="btn rounded-0 py-3 px-3 text-white text-uppercase mt-3">more details</a>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="img">
+                                    <img src="./assets/images/img-02.jpg" alt="article">
+                                </div>
+                                <div class="content px-3 py-4 bg-white">
+                                    <h3 class="mb-2">nunc in felis aliquent metus luctus iaculis</h3>
+                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                    <a href="#" class="btn rounded-0 py-3 px-3 text-white text-uppercase mt-3">more details</a>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="img">
+                                    <img src="./assets/images/img-01.jpg" alt="article">
+                                </div>
+                                <div class="content px-3 py-4 bg-white">
+                                    <h3 class="mb-2">nunc in felis aliquent metus luctus iaculis</h3>
+                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                    <a href="#" class="btn rounded-0 py-3 px-3 text-white text-uppercase mt-3">more details</a>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="img">
+                                    <img src="./assets/images/img-02.jpg" alt="article">
+                                </div>
+                                <div class="content px-3 py-4 bg-white">
+                                    <h3 class="mb-2">nunc in felis aliquent metus luctus iaculis</h3>
+                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                    <a href="#" class="btn rounded-0 py-3 px-3 text-white text-uppercase mt-3">more details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommended-places col-12 col-xl-4">
+                            <div class="title p-2">
+                                <h5 class="text-white">recommended places</h5>
+                                <p class="text-white mt-2">Places that we recommend for you</p>
+                            </div>
+                            <div class="places d-flex flex-column gap-3 p-3 bg-white">
+                                <div class="place d-flex align-items-center">
+                                    <div class="img">
+                                        <img src="./assets/images/tn-img-01.jpg" alt="place">
+                                    </div>
+                                    <a href="#" class="text-uppercase text-dark ms-5">europe</a>
+                                </div>
+                                <div class="place d-flex align-items-center">
+                                    <div class="img">
+                                        <img src="./assets/images/tn-img-02.jpg" alt="place">
+                                    </div>
+                                    <a href="#" class="text-uppercase text-dark ms-5">asia</a>
+                                </div>
+                                <div class="place d-flex align-items-center">
+                                    <div class="img">
+                                        <img src="./assets/images/tn-img-03.jpg" alt="place">
+                                    </div>
+                                    <a href="#" class="text-uppercase text-dark ms-5">africa</a>
+                                </div>
+                                <div class="place d-flex align-items-center">
+                                    <div class="img">
+                                        <img src="./assets/images/tn-img-04.jpg" alt="place">
+                                    </div>
+                                    <a href="#" class="text-uppercase text-dark ms-5">america</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video pause">
+                <div class="video-container d-flex align-items-center position-relative">
+                    <video src="assets/video/Facebook 476512574073619(360p).mp4" muted></video>
+                    <i class="fas fa-play-circle position-absolute z-2 text-white"></i>
+                    <i class="fas fa-pause-circle position-absolute z-2 text-white hide"></i>
+                </div>
+            </section>
+            <section class="contact d-flex justify-content-center align-items-center bg-white py-5" id="contact">
+                <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="map col-12 col-xl-6 px-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26854.60960970893!2d36.572864!3d32.7172457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15197fd6bfce1f21%3A0xcfdc6b1f0d55b8a9!2z2K3ZiiDYp9mE2K_YqNmK2LPZitiMINin2YTYs9mI2YrYr9in2KHYjCDYs9mI2LHZitin!5e0!3m2!1sar!2s!4v1681147045697!5m2!1sar!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    </div>
+                    <form action="index.html" class="d-flex flex-column gap-3 col-12 col-xl-6">
+                        <div class="form-group position-relative">
+                            <i class="fas fa-user position-absolute"></i>
+                            <input class="form-control rounded-0 py-2 pe-2 ps-5" type="text" placeholder="name">
+                        </div>
+                        <div class="form-group position-relative">
+                            <i class="fas fa-envelope position-absolute"></i>
+                            <input class="form-control rounded-0 py-2 pe-2 ps-5" type="email" placeholder="email">
+                        </div>
+                        <div class="form-group position-relative">
+                            <i class="fas fa-book position-absolute"></i>
+                            <input class="form-control rounded-0 py-2 pe-2 ps-5" type="text" placeholder="subject">
+                        </div>
+                        <div class="form-group position-relative">
+                            <i class="fab fa-facebook-messenger position-absolute"></i>
+                            <textarea class="form-control rounded-0 py-2 pe-2 ps-5" placeholder="message"></textarea>
+                        </div>
+                        <input class="form-control send rounded-0 p-2 text-white text-uppercase" type="submit" value="send message now">
+                    </form>
+                </div>
+            </section>
+            <span class="show-navbar rounded-5 position-fixed bg-white justify-content-center align-items-center p-2 hide">
+                <i class="fas fa-bars"></i>
+            </span>
+            <footer class="footer d-flex justify-content-center align-items-center py-4">
+                <div class="container text-center">
+                    <p class="text-white">Copyright &copy; 2022 Your Company - Design: <span>Nour D.Homsi</span></p>
+                </div>
+            </footer>
+        </main>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/jquery-3.6.3.min.js"></script>
+        <script src="./assets/js/jquery-ui.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>

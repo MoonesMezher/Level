@@ -1,0 +1,316 @@
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  text-transform: capitalize;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body a {
+  text-decoration: none;
+}
+body img {
+  height: 100%;
+  width: 100%;
+}
+body .page .header.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  box-shadow: 0 0 4px black;
+}
+body .page .header.show .nav-link {
+  padding: 2em !important;
+}
+body .page .header .navbar .container .collapse .navbar-nav .level-nav-link {
+  background-color: transparent !important;
+  color: #111111;
+  transition: 0.15s;
+}
+body .page .header .navbar .container .collapse .navbar-nav .level-nav-link:hover, body .page .header .navbar .container .collapse .navbar-nav .level-nav-link.active {
+  background-color: #ee5057 !important;
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  body .page .header .navbar .container .collapse .navbar-nav .level-nav-link {
+    padding: 1.5em !important;
+  }
+}
+body .page .header .navbar .container .collapse .navbar-nav .level-nav-link.darkMood:hover, body .page .header .navbar .container .collapse .navbar-nav .level-nav-link.darkMood.active {
+  background-color: black !important;
+  color: white;
+}
+body .page .header .navbar .container .collapse .navbar-nav span {
+  right: -1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .page .header .navbar .container .collapse .navbar-nav span i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.15s;
+}
+body .page .header .navbar .container .collapse .navbar-nav span i:hover {
+  scale: 1.1;
+}
+body .page .header .navbar .container .collapse .navbar-nav span i.hide {
+  display: none;
+}
+body .page .header .navbar .container .collapse .navbar-nav span i:first-child {
+  color: #ee5057;
+}
+body .page .search-form {
+  height: 515px;
+  background: url("../images/samsommer-T0XLKgpyT_c-unsplash.jpg") no-repeat center center/cover;
+}
+body .page .search-form .container .box form {
+  background-color: white;
+}
+body .page .search-form .container .box form .form-group {
+  flex: 1 25%;
+}
+body .page .search-form .container .box form .form-group:first-child {
+  flex: 100%;
+}
+body .page .search-form .container .box form .form-group:last-child .form-control {
+  background-color: #ee5057;
+  font-weight: bold;
+  transition: 0.15s;
+}
+body .page .search-form .container .box form .form-group:last-child .form-control:hover {
+  background-color: #be3c41 !important;
+}
+body .page .search-form .container .box form .form-group:last-child .form-control.darkMood:hover {
+  background-color: darkgoldenrod !important;
+}
+body .page .search-form .container .box form .form-group i {
+  color: #ee5057;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.4em;
+}
+body .page .search-form .container .box form .form-group .form-control::-moz-placeholder {
+  text-transform: capitalize;
+}
+body .page .search-form .container .box form .form-group .form-control::placeholder {
+  text-transform: capitalize;
+}
+@media screen and (max-width: 575px) {
+  body .page .search-form .container .box form .form-group .form-control {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .page .search-form .container .box form .form-group {
+    flex: 1 40%;
+  }
+}
+@media screen and (max-width: 575px) {
+  body .page .search-form .container .box form .form-group {
+    flex: 1 100%;
+  }
+}
+body .page .search-form .container .box .text p {
+  font-size: 0.9rem;
+  color: #ee5057;
+}
+body .page .search-form .container .box .text p a {
+  transition: 0.15s;
+}
+body .page .search-form .container .box .text p a:hover {
+  color: blue !important;
+}
+body .page .services .title {
+  background-color: #ee5057;
+  -webkit-clip-path: polygon(0% 0%, 0% 80%, 50% 100%, 100% 80%, 100% 0);
+          clip-path: polygon(0% 0%, 0% 80%, 50% 100%, 100% 80%, 100% 0);
+  height: 290px;
+}
+body .page .services .title p {
+  font-size: 1.2rem;
+}
+body .page .services .title .btn {
+  border: 2px solid white;
+  font-weight: 500;
+  transition: 0.15s;
+}
+body .page .services .title .btn:hover {
+  background-color: white !important;
+  color: #ee5057 !important;
+}
+body .page .services .title .btn.darkMood:hover {
+  background-color: darkgoldenrod !important;
+  color: white !important;
+}
+@media screen and (max-width: 991px) {
+  body .page .services .cards .container {
+    gap: 1.5em;
+  }
+}
+body .page .services .cards .container .box {
+  flex: 30%;
+  transition: 0.15s;
+}
+@media screen and (max-width: 991px) {
+  body .page .services .cards .container .box {
+    flex-basis: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .page .services .cards .container .box {
+    flex-basis: 100%;
+  }
+}
+body .page .services .cards .container .box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 4px #111111;
+}
+body .page .services .cards .container .box i {
+  color: #ee5057;
+  font-size: 3rem;
+}
+body .page .services .cards .container .box h3 {
+  color: #ee5057;
+}
+body .page .services .cards .container .box p {
+  color: #ee5057;
+}
+body .page .services .cards .container .box .btn {
+  background-color: #ee5057;
+  font-weight: bold;
+  transition: 0.15s;
+}
+body .page .services .cards .container .box .btn:hover {
+  background-color: #be3c41 !important;
+}
+body .page .services .cards .container .box .btn.darkMood:hover {
+  background-color: darkgoldenrod !important;
+}
+body .page .recommends {
+  background-color: #f4f4f4;
+}
+body .page .recommends .container .row .slider .article {
+  width: 40%;
+  margin-right: 10px !important;
+}
+body .page .recommends .container .row .slider .article .content h3 {
+  color: #ee5057;
+}
+body .page .recommends .container .row .slider .article .content p {
+  font-size: 0.9rem;
+}
+body .page .recommends .container .row .slider .article .content .btn {
+  font-weight: 500;
+  background-color: #ee5057;
+  transition: 0.15s;
+}
+body .page .recommends .container .row .slider .article .content .btn:hover {
+  background-color: #be3c41 !important;
+}
+body .page .recommends .container .row .slider .article .content .btn.darkMood:hover {
+  background-color: darkgoldenrod !important;
+}
+body .page .recommends .container .row .slider .slick-dots li button.darkMood::before {
+  color: #111111;
+}
+body .page .recommends .container .row .slider .slick-dots li button::before {
+  color: #ee5057;
+  font-size: 2rem;
+}
+body .page .recommends .container .row .recommended-places .title {
+  background-color: #ee5057;
+}
+body .page .recommends .container .row .recommended-places .title p {
+  font-size: 0.9rem;
+}
+body .page .recommends .container .row .recommended-places .places .place {
+  background-color: #f4f4f4;
+  transition: 0.15s;
+}
+body .page .recommends .container .row .recommended-places .places .place:hover {
+  background-color: rgba(0, 0, 0, 0.5019607843);
+}
+body .page .recommends .container .row .recommended-places .places .place:hover a {
+  color: white !important;
+}
+body .page .recommends .container .row .recommended-places .places .place a {
+  font-weight: 600;
+}
+body .page .video .video-container video {
+  width: 100%;
+}
+body .page .video .video-container i {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  cursor: pointer;
+}
+body .page .video .video-container i.hide {
+  display: none;
+}
+body .page .video .video-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  opacity: 50%;
+  z-index: 1;
+}
+body .page .contact .container form .form-group i {
+  color: #ee5057;
+  left: 0.9em;
+  top: 0.6em;
+  font-size: 1.2rem;
+}
+body .page .contact .container form .form-group .form-control {
+  background-color: #f4f4f4;
+}
+body .page .contact .container form textarea {
+  height: 200px;
+}
+body .page .contact .container form .send {
+  transition: 0.15s;
+  background-color: #ee5057;
+  font-weight: bold;
+}
+body .page .contact .container form .send:hover {
+  background-color: #be3c41 !important;
+}
+body .page .contact .container form .send.darkMood:hover {
+  background-color: darkgoldenrod !important;
+}
+body .page .show-navbar {
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 0 4px black;
+  display: flex;
+  cursor: pointer;
+  transition: 0.15s;
+  z-index: 11;
+}
+body .page .show-navbar:hover {
+  box-shadow: 0 0 6px black;
+}
+body .page .show-navbar.hide {
+  display: none;
+}
+body .page .show-navbar i {
+  color: #ee5057;
+}
+body .page .footer {
+  background-color: #111111;
+}
+body .page .footer .container p span {
+  color: #ee5057;
+}/*# sourceMappingURL=index.css.map */
